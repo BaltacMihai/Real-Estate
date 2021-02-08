@@ -1,0 +1,124 @@
+:root {
+    --borderRadius: 10px;
+    --mainColor: #F7F4F3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+}
+
+.navbar {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--mainColor);
+}
+
+.filter {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--mainColor);
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+.dropbtn {
+    border-width: 5px;
+    border-color: rgb(0, 158, 224);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.search {
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+#logo {
+    height: 50px;
+}
+
+#map {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    height: 500px;
+    width: 500px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(0, 158, 224);
+    color: white;
+}
+
+.items {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    border-radius: var(--borderRadius);
+    border: black solid 3px;
+    flex: 0 0 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img {
+    width: 300px;
+    height: 150px;
+}
